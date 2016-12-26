@@ -1,27 +1,22 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-
- 
-
- 
-<form action="">
-    <label for="userName">User Name</label>
-    <input class="form-control" type="text" name="userName" id="userName" placeholder="User Name...">
-
-    <label for="email">Email</label>
-    <input class="form-control" type="email" name="email" id="email" placeholder="Email...">
-
-    <label for="password">Password</label>
-    <input class="form-control" type="password" name="password" id="password" placeholder="Password...">
-
-    <label for="repeat-password">Repeat Password</label>
-    <input class="form-control" type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password...">
-
-    <label for="recieveEmails">Receive emails?</label>
-    <input type="checkbox" name="recieveEmails" id="recieveEmails" value="Yes">
-
-    <input type="submit" value="Send..." class="btn btn-success">
-</form>
+<p id="myParagraph">Hello, JS</p>
 
 
- <script src="/javascripts/custom.js"></script>
+<input id="num1" type="text" placeholder="num1...">
+<br>
+<input id="num2" type="text" placeholder="num2...">
+<br>
+
+<div id="myBtn" class="btn btn-primary">Click me</div>
+
+<table class="table table-striped">
+{{#each arr}}
+<tr>
+   <td>{{vendor}}</td>
+   <td>{{model}}</td>
+   <td>{{color}}</td>
+</tr>
+{{/each}}
+</table>
+
+
+<img width="200" height="200" src="http://api.androidhive.info/json/movies/1.jpg">
